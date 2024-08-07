@@ -1,0 +1,154 @@
+---
+import Isotipo from "./Iconos/Isotipo.astro";
+
+const navegacion = [
+  {
+    title: "Servicios",
+    url: "/#servicios",
+  },
+  {
+    title: "Proyectos",
+    url: "/#proyectos",
+  },
+  {
+    title: "Nosotros",
+    url: "/#nosotros",
+  },
+];
+
+const sociales = [
+  {
+    title: "Facebook",
+    url: "https://www.facebook.com/profile.php?id=61561107718264&mibextid=ZbWKwL",
+    imagen: "/facebook.webp",
+  },
+  {
+    title: "Instagram",
+    url: "https://www.instagram.com/cctvmedina?igsh=MTVubWI3OTM5aGNvZg==",
+    imagen: "/instagram.webp",
+  },
+  {
+    title: "WhatsApp",
+    url: "https://api.whatsapp.com/send?phone=+56936140068&text=Hola!%20%C2%BFQue%20tal?%20Vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20consultar%20sobre%20uno%20de%20tus%20servicios.%20%C2%BFMe%20podr%C3%ADa%20dar%20m%C3%A1s%20informaci%C3%B3n?",
+    imagen: "/whatsapp.webp",
+  },
+];
+
+const legales = [
+  {
+    title: "Privacy Policy",
+    url: "/#PrivacyPolicy",
+  },
+  {
+    title: "Terms & Conditions",
+    url: "/#Terms&Conditions",
+  },
+];
+---
+
+<footer class="bg-white">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+        <a href="/#inicio" class="flex items-center">
+          <Isotipo class="h-14 me-3" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap"
+            >CCTV Medina</span
+          >
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
+            Actividades
+          </h2>
+          <ul class="text-gray-500 font-medium">
+            {
+              navegacion.map((link) => (
+                <li class="mb-4">
+                  <a
+                    aria-label={link.title}
+                    href={link.url}
+                    class="hover:underline hover:text-red-500"
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
+            Síguenos en
+          </h2>
+          <ul class="text-gray-500 font-medium">
+            {
+              sociales.map((social) => (
+                <li class="mb-4">
+                  <a
+                    aria-label={social.title}
+                    href={social.url}
+                    class="hover:underline hover:text-red-500"
+                    target="_blank"
+                  >
+                    {social.title}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
+            Legal
+          </h2>
+          <ul class="text-gray-500 font-medium">
+            {
+              legales.map((legal) => (
+                <li class="mb-4">
+                  <a
+                    aria-label={legal.title}
+                    href={legal.url}
+                    class="hover:underline hover:text-red-500"
+                  >
+                    {legal.title}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center"
+        >Copyright © 2024 <a
+          href="/#inicio"
+          class="hover:underline hover:text-red-500"
+          >Servicios de Telecomunicaciones Chile SPA</a
+        >. creado por <a
+          href="https://fabianjara.netlify.app/"
+          class="hover:underline hover:text-red-500"
+          target="_blank">Fabian Jara</a
+        >
+      </span>
+      <div class="flex mt-4 sm:justify-center sm:mt-0">
+        {
+          sociales.map((social) => (
+            <a
+              href={social.url}
+              aria-label={social.title}
+              class="text-gray-500 hover:text-gray-900 ms-5"
+              target="_blank"
+            >
+              <img src={social.imagen} class="w-4 h-4" alt="" />
+              <span class="sr-only">{social.title}</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</footer>

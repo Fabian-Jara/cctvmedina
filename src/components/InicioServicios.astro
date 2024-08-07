@@ -1,0 +1,115 @@
+---
+import EdificioIcono from "./Iconos/EdificioIcono.astro";
+import MaletinIcono from "./Iconos/MaletinIcono.astro";
+import SeguridadIcono from "./Iconos/SeguridadIcono.astro";
+import CamaraIcono from "./Iconos/CamaraIcono.astro";
+import IrAlLugarIcono from "./Iconos/IrAlLugarIcono.astro";
+---
+
+<div class="bg-red-500 shadow-xl">
+  <div class="max-w-screen-xl mx-auto">
+    <h1 class="text-center text-[24pt] text-gray-100 pt-4">
+      Algunos de nuestros servicios
+    </h1>
+    <hr class="h-1 bg-yellow-300 border-none rounded-2xl w-60 mx-auto" />
+    <div
+      class="w-full inline-flex flex-nowrap overflow-hidden
+  sm:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]
+  [mask-image:_linear-gradient(to_right,transparent_0,_black_50px,_black_calc(100%-30px),transparent_100%)]
+  text-gray-100 text-center
+  sm:py-12 py-8 px-6"
+    >
+      <ul
+        class="flex items-center justify-center md:justify-start sm:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+      >
+        <li class="sm:min-w-[250px] min-w-[200px] px-4">
+          <MaletinIcono class="size-32 mx-auto" />
+          <h1 class="text-3xl font-bold">Administración</h1>
+          <p class="sm:text-[14pt] text-base pt-4">
+            Experiencia en <span class="text-yellow-100"
+              >control y administración</span
+            > de grandes proyectos
+          </p>
+        </li>
+        <li class="sm:min-w-[250px] min-w-[200px] px-4">
+          <SeguridadIcono class="size-32 mx-auto" />
+          <h1 class="text-3xl font-bold">Seguridad</h1>
+          <p class="sm:text-[14pt] text-base pt-4">
+            Instalación de sistemas de <span class="text-yellow-100"
+              >seguridad y control de accesos</span
+            >
+          </p>
+        </li>
+        <li class="sm:min-w-[250px] min-w-[200px] px-4">
+          <CamaraIcono class="size-32 mx-auto" />
+          <h1 class="text-3xl font-bold">Videovigilancia</h1>
+          <p class="sm:text-[14pt] text-base pt-4">
+            Implementación de <span class="text-yellow-100">CCTV</span> para grandes
+            y pequeños proyectos
+          </p>
+        </li>
+        <li class="sm:min-w-[250px] min-w-[200px] px-4">
+          <EdificioIcono class="size-32 mx-auto" />
+          <h1 class="text-3xl font-bold">Edificios</h1>
+          <p class="sm:text-[14pt] text-base pt-4">
+            <span class="text-yellow-100">Cableado y estructurado</span> de corrientes
+            débiles
+            <spam class="sm:block hidden"> y telecomunicaciones</spam>
+          </p>
+        </li>
+      </ul>
+
+      <ul
+        class="flex items-center justify-center md:justify-start sm:[&_li]:mx-8 [&_li]:mx-0 [&_img]:max-w-none animate-infinite-scroll"
+        aria-hidden="true"
+      >
+        <li class="sm:min-w-[250px] min-w-[200px] px-4">
+          <MaletinIcono class="size-32 mx-auto" />
+          <h1 class="text-3xl font-bold">Administración</h1>
+          <p class="sm:text-[14pt] text-base pt-4">
+            Experiencia en <span class="text-yellow-100"
+              >control y administración</span
+            > de grandes proyectos
+          </p>
+        </li>
+        <li class="sm:min-w-[250px] min-w-[200px] px-4">
+          <SeguridadIcono class="size-32 mx-auto" />
+          <h1 class="text-3xl font-bold">Seguridad</h1>
+          <p class="sm:text-[14pt] text-base pt-4">
+            Instalación de sistemas de <span class="text-yellow-100"
+              >seguridad y control de accesos</span
+            >
+          </p>
+        </li>
+        <li class="sm:min-w-[250px] min-w-[200px] px-4">
+          <CamaraIcono class="size-32 mx-auto" />
+          <h1 class="text-3xl font-bold">Videovigilancia</h1>
+          <p class="sm:text-[14pt] text-base pt-4">
+            Implementación de <span class="text-yellow-100">CCTV</span> para grandes
+            y pequeños proyectos
+          </p>
+        </li>
+        <li class="sm:min-w-[250px] min-w-[200px] px-4">
+          <EdificioIcono class="size-32 mx-auto" />
+          <h1 class="text-3xl font-bold">Edificios</h1>
+          <p class="sm:text-[14pt] text-base pt-4">
+            <span class="text-yellow-100">Cableado y estructurado</span> de corrientes
+            débiles
+            <spam class="sm:block hidden"> y telecomunicaciones</spam>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="flex">
+      <a
+        href="#"
+        target="_blank"
+        type="button"
+        class="mx-auto px-5 py-2 text-[12pt] font-medium text-gray-950 mb-10 inline-flex items-center justify-center bg-yellow-300 hover:bg-yellow-200 focus:ring-4 focus:outline-none focus:ring-yellow-400 rounded-lg"
+      >
+        Ir a Servicios
+        <IrAlLugarIcono class="size-6 ml-2" />
+      </a>
+    </div>
+  </div>
+</div>
