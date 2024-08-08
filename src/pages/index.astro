@@ -1,20 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Presentacion from "../components/Presentacion.astro";
-import CarruselInicio from "../components/CarruselInicio.astro";
+import InicioPresentacion from "../components/InicioPresentacion.astro";
+import InicioCarrusel from "../components/InicioCarrusel.astro";
 import InicioServicios from "../components/InicioServicios.astro";
+import InicioUltimosProyectos from "../components/InicioUltimosProyectos.astro";
 ---
 
 <Layout
   title="Servicio de Telecomunicaciones Chile SPA"
   description="Instalación telecomunicaciones, Corrientes débiles y seguridad electronica para grandes empresas, pequeñas empresas y particulares."
 >
-  <CarruselInicio />
+  <InicioCarrusel />
   <div class="max-w-screen-xl mt-24 mx-auto p-4">
-    <Presentacion />
+    <InicioPresentacion />
   </div>
 
   <div class="mt-24">
     <InicioServicios />
+  </div>
+  <div class="max-w-screen-xl mt-24 mx-auto p-4">
+    <InicioUltimosProyectos />
   </div>
 </Layout>

@@ -1,0 +1,102 @@
+---
+import Isotipo from "./Iconos/Isotipo.astro";
+import BotonMenu from "./Iconos/BotonMenu.astro";
+import IrAlLugarIcono from "./Iconos/IrAlLugarIcono.astro";
+
+const ultimosProyectos = [
+  {
+    img: "/trabajo1.webp",
+    imgAlt: "",
+    imgTitulo: "",
+    txtTitulo: "Panel y Sensores de Alarma de Incendio",
+    txtParrafo:
+      "Instalación de sensores y configuración de central de alarma de incendio para bodegas Montserrat.",
+  },
+  {
+    img: "/trabajo2.webp",
+    imgAlt: "",
+    imgTitulo: "",
+    txtTitulo: "Motor para Portón Automático ",
+    txtParrafo:
+      "Instalación de portón y configuración de motor para cierre rápido anti portonazo con mando a distancia para condominio las Condes.",
+  },
+  {
+    img: "/trabajo3.webp",
+    imgAlt: "",
+    imgTitulo: "",
+    txtTitulo: "Panel Eléctrico para Empresas",
+    txtParrafo:
+      "Completa configuración de panel eléctrico con cableado y estructurado en empresa ubicada en Estación Central",
+  },
+  {
+    img: "/trabajo4.webp",
+    imgAlt: "",
+    imgTitulo: "",
+    txtTitulo: "Instalación de Seguridad CCTV",
+    txtParrafo:
+      "Configuración, instalación, cableado y estructurado de cámaras de seguridad para Edificio en construcción Catedral",
+  },
+  {
+    img: "/trabajo5.webp",
+    imgAlt: "",
+    imgTitulo: "",
+    txtTitulo: "Instalación de Puntos de Comunicación",
+    txtParrafo:
+      "Comunicación alámbrica e inalámbrica y puntos de conexión de fibra óptica para edificio Novo Catedral",
+  },
+  {
+    img: "/trabajo6.webp",
+    imgAlt: "",
+    imgTitulo: "",
+    txtTitulo: "Cableado y Estructurado de Telecomunicaciones",
+    txtParrafo:
+      "Instalación de cableado y Estructurado de comunicación Coaxial y fibra óptica para edificio Novo Catedral",
+  },
+];
+---
+
+<div>
+  <h1 class="text-center text-4xl text-gray-950 font-bold">
+    Algunos de nuestros servicios
+  </h1>
+  <hr class="h-1 bg-yellow-300 border-none rounded-2xl w-60 mx-auto" />
+</div>
+
+<div class="flex flex-wrap gap-10 justify-between pt-20">
+  {
+    ultimosProyectos.map((Proyectos) => (
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow mb-4">
+        <a href="#">
+          <img
+            class="rounded-t-lg"
+            src={Proyectos.img}
+            alt={Proyectos.imgAlt}
+            title={Proyectos.imgTitulo}
+          />
+        </a>
+        <div class="p-5">
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-950 text-pretty">
+              {Proyectos.txtTitulo}
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 text-pretty text-lg">
+            {Proyectos.txtParrafo}
+          </p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<div class="flex pt-14">
+  <a
+    href="#"
+    target="_blank"
+    type="button"
+    class="mx-auto px-5 py-2 text-lg font-medium text-gray-950 inline-flex items-center justify-center bg-yellow-300 hover:bg-yellow-200 shadow-xl focus:ring-4 focus:outline-none focus:ring-yellow-400 rounded-lg"
+  >
+    Ir a Proyectos
+    <IrAlLugarIcono class="size-6 ml-2" />
+  </a>
+</div>
