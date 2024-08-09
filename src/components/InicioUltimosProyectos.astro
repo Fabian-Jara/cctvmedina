@@ -13,7 +13,7 @@ const ultimosProyectos = [
       "Instalación de sensores y configuración de central de alarma de incendio para bodegas Montserrat.",
   },
   {
-    img: "/trabajo2.webp",
+    img: "/trabajo3.webp",
     imgAlt: "",
     imgTitulo: "",
     txtTitulo: "Motor para Portón Automático ",
@@ -21,7 +21,7 @@ const ultimosProyectos = [
       "Instalación de portón y configuración de motor para cierre rápido anti portonazo con mando a distancia para condominio las Condes.",
   },
   {
-    img: "/trabajo3.webp",
+    img: "/trabajo2.webp",
     imgAlt: "",
     imgTitulo: "",
     txtTitulo: "Panel Eléctrico para Empresas",
@@ -29,7 +29,7 @@ const ultimosProyectos = [
       "Completa configuración de panel eléctrico con cableado y estructurado en empresa ubicada en Estación Central",
   },
   {
-    img: "/trabajo4.webp",
+    img: "/trabajo6.webp",
     imgAlt: "",
     imgTitulo: "",
     txtTitulo: "Instalación de Seguridad CCTV",
@@ -45,7 +45,7 @@ const ultimosProyectos = [
       "Comunicación alámbrica e inalámbrica y puntos de conexión de fibra óptica para edificio Novo Catedral",
   },
   {
-    img: "/trabajo6.webp",
+    img: "/trabajo4.webp",
     imgAlt: "",
     imgTitulo: "",
     txtTitulo: "Cableado y Estructurado de Telecomunicaciones",
@@ -57,7 +57,7 @@ const ultimosProyectos = [
 
 <div>
   <h1 class="text-center text-4xl text-gray-950 font-bold">
-    Algunos de nuestros servicios
+    Algunos de nuestros proyectos
   </h1>
   <hr class="h-1 bg-yellow-300 border-none rounded-2xl w-60 mx-auto" />
 </div>
@@ -65,15 +65,17 @@ const ultimosProyectos = [
 <div class="flex flex-wrap gap-10 justify-between pt-20">
   {
     ultimosProyectos.map((Proyectos) => (
-      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow mb-4">
-        <a href="#">
-          <img
-            class="rounded-t-lg"
-            src={Proyectos.img}
-            alt={Proyectos.imgAlt}
-            title={Proyectos.imgTitulo}
-          />
-        </a>
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow mb-4 overflow-hidden">
+        <div class="overflow-hidden">
+          <a href="#">
+            <img
+              class="rounded-t-lg hover:scale-105 transition-transform"
+              src={Proyectos.img}
+              alt={Proyectos.imgAlt}
+              title={Proyectos.imgTitulo}
+            />
+          </a>
+        </div>
         <div class="p-5">
           <a href="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-950 text-pretty">

@@ -1,9 +1,12 @@
 ---
 import InovacionSVG from "./Iconos/InovacionSVG.astro";
 import WhatsappIcono from "./Iconos/Whatsapp.astro";
+import Isotipo from "./Iconos/Isotipo.astro";
 ---
 
-<div class="flex flex-col items-center md:flex-row mx-auto w-full">
+<div
+  class="flex flex-col items-center md:flex-row mx-auto w-full justify-between"
+>
   <div class="flex flex-col justify-between leading-normal max-w-[650px] mr-10">
     <h1 class="mb-5 font-extrabold text-black">
       <span class="lg:text-6xl xl:text-[62pt] block mb-1">SERVICIOS DE </span>
@@ -24,11 +27,11 @@ import WhatsappIcono from "./Iconos/Whatsapp.astro";
       href="#"
       target="_blank"
       type="button"
-      class="mt-14 px-5 py-2.5 text-[16pt] font-medium text-gray-950 inline-flex items-center justify-center bg-yellow-300 hover:bg-yellow-200 shadow-xl focus:ring-4 focus:outline-none focus:ring-yellow-400 rounded-lg w-56"
+      class="mt-14 px-5 py-2.5 text-[16pt] font-medium text-gray-950 inline-flex items-center justify-center bg-yellow-300 hover:bg-yellow-200 shadow-xl focus:ring-4 focus:outline-none focus:ring-yellow-400 rounded-lg w-56 transition-all"
     >
       <WhatsappIcono class="size-7 me-2" />
       Contactar
     </a>
   </div>
-  <InovacionSVG />
+  <Isotipo class="max-w-[500px]" />
 </div>
