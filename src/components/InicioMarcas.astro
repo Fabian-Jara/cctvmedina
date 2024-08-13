@@ -1,0 +1,101 @@
+---
+const Marcas = [
+  {
+    img: "/marca1.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca2.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca3.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca4.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca5.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca6.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca7.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca8.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca9.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca10.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca11.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca12.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca13.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca14.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/marca15.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+];
+---
+
+<div>
+  <h1 class="text-center text-4xl text-gray-950 font-bold">
+    Marcas con las que trabajamos
+  </h1>
+  <hr class="h-1 bg-yellow-300 border-none rounded-2xl w-60 mx-auto" />
+</div>
+
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4 pt-20 pb-24">
+  {
+    Marcas.map((marca) => (
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src={marca.img}
+          alt={marca.imgAlt}
+          title={marca.imgTitulo}
+        />
+      </div>
+    ))
+  }
+</div>
