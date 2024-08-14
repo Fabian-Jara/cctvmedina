@@ -5,19 +5,25 @@ import Isotipo from "./Iconos/Isotipo.astro";
 ---
 
 <div
-  class="flex flex-col items-center md:flex-row mx-auto w-full justify-between"
+  class="flex items-center md:flex-row mx-auto w-full justify-between flex-col-reverse"
 >
-  <div class="flex flex-col justify-between leading-normal max-w-[650px] mr-10">
-    <h1 class="mb-5 font-extrabold text-black">
-      <span class="lg:text-6xl xl:text-[62pt] block mb-1">SERVICIOS DE </span>
-      <span class="lg:text-4xl xl:text-[36pt] block mb-3"
+  <div
+    class="flex flex-col md:justify-between leading-normal max-w-[650px] md:mr-10"
+  >
+    <h1 class="mb-5 font-extrabold text-black text-center md:text-left">
+      <span class="md:text-6xl xl:text-[62pt] text-[34pt] block md:mb-1 -mb-2"
+        >SERVICIOS DE
+      </span>
+      <span class="md:text-4xl xl:text-[36pt] text-[20pt] block md:mb-3"
         >TELECOMUNICACIONES
       </span>
-      <span class="lg:text-4xl xl:text-[36pt] block text-red-500">
+      <span class="md:text-4xl xl:text-[36pt] text-[20pt] block text-red-500">
         CHILE SPA
       </span>
     </h1>
-    <p class="mb-3 font-normal text-gray-700 lg:text-[18pt] text-pretty">
+    <p
+      class="text-pretty mb-3 font-normal text-gray-700 md:text-[18pt] text-[14pt] text-center md:text-left"
+    >
       Tenemos una amplia instalación de servicios, nuestra misión es ofrecer
       solución e innovación efectivas para Seguridad Electronica, Corrientes
       débiles y Telecomunicaciones.
@@ -27,11 +33,13 @@ import Isotipo from "./Iconos/Isotipo.astro";
       href="#"
       target="_blank"
       type="button"
-      class="mt-14 px-5 py-2.5 text-[16pt] font-medium text-gray-950 inline-flex items-center justify-center bg-yellow-300 hover:bg-yellow-200 shadow-xl focus:ring-4 focus:outline-none focus:ring-yellow-400 rounded-lg w-56 transition-all"
+      class="mt-14 px-5 mx-auto py-2.5 text-[14pt] md:text-[16pt] font-medium text-gray-950 inline-flex items-center justify-center bg-yellow-300 hover:bg-yellow-200 shadow-xl focus:ring-4 focus:outline-none focus:ring-yellow-400 rounded-lg w-56 transition-all"
     >
-      <WhatsappIcono class="size-7 me-2" />
+      <WhatsappIcono class="size-6 md:size-7 me-2" />
       Contactar
     </a>
   </div>
-  <Isotipo class="max-w-[500px]" />
+  <Isotipo
+    class="lg:max-w-[500px] md:max-w-[400px] max-w-[250px] md:mb-0 mb-10"
+  />
 </div>
