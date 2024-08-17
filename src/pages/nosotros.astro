@@ -6,5 +6,76 @@ import Layout from "../layouts/Layout.astro";
   title="Sobre Nosotros - Servicios de Telecomunicaciones Chile SPA"
   description="Conoce a Servicios de Telecomunicaciones Chile SPA: más de 20 años de experiencia en corrientes débiles, seguridad electrónica y telecomunicaciones."
 >
-  <h1>Nosotros</h1>
+  <div
+    class="flex mt-20 h-[300px] bg-[url('/sobreNosotros.webp')] bg-cover"
+    style="background-position: top -90px center;"
+  >
+    <div
+      class="bg-yellow-300/50 w-full flex flex-col justify-center items-center"
+    >
+      <h1 class="text-5xl font-bold text-gray-950">Sobre Nosotros</h1>
+      <hr class="h-1 bg-gray-950 border-none rounded-2xl w-60 mx-auto" />
+    </div>
+  </div>
+
+  <div class="max-w-screen-xl mx-auto mt-24 p-4">
+    <p class="text-[14pt] text-gray-950">
+      En Servicios de Telecomunicaciones Chile SPA, somos líderes en soluciones
+      integrales para seguridad electrónica, telecomunicaciones y corrientes
+      débiles en Chile. Con más de <span class="text-red-500"
+        >20 años de experiencia</span
+      > en el sector, nos hemos posicionado como un referente confiable en la implementación
+      de tecnologías avanzadas, dedicados a proteger y optimizar la comunicación
+      de nuestros clientes.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10 mt-24">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Nuestros Servicios</h2>
+        <ul class="list-disc pl-6 space-y-4">
+          <li>
+            <strong>Seguridad Electrónica:</strong> Diseñamos e instalamos sistemas
+            de videovigilancia, control de acceso, alarmas contra incendios y más,
+            personalizados para satisfacer las necesidades específicas de cada cliente.
+          </li>
+          <li>
+            <strong>Telecomunicaciones:</strong> Ofrecemos soluciones integrales
+            en redes de datos, telefonía IP, sistemas de intercomunicación y más,
+            garantizando una conectividad robusta y eficiente.
+          </li>
+          <li>
+            <strong>Corrientes Débiles:</strong> Implementamos sistemas de sonido
+            ambiental, detección de intrusión, redes de fibra óptica y más, adaptados
+            a entornos comerciales, residenciales e industriales.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Nuestro Compromiso</h2>
+        <ul class="list-disc pl-6 space-y-4">
+          <li>
+            <strong>Calidad y Tecnología:</strong> Empleamos productos y tecnologías
+            de vanguardia para asegurar la fiabilidad y eficacia de cada solución
+            que instalamos.
+          </li>
+          <li>
+            <strong>Asesoría Personalizada:</strong> Nuestro equipo técnico especializado
+            ofrece asesoramiento experto desde la concepción del proyecto hasta su
+            implementación y mantenimiento.
+          </li>
+          <li>
+            <strong>Atención al Cliente:</strong> Nos enfocamos en la satisfacción
+            del cliente, proporcionando un servicio personalizado y una atención
+            rápida a cualquier requerimiento.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8"></div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+    </div>
+  </div>
 </Layout>
