@@ -1,10 +1,86 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const serviciosSeguridadElectronica = [
+  {
+    img: "/servicio1.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "Instalación de CCTV (Cámaras de Seguridad)",
+    textoDescripcion:
+      "Ofrecemos instalación profesional de sistemas de cámaras CCTV de alta definición, con visión nocturna y detección de movimiento. Incluyendo instalación de cableado, configuración de DVR y acceso remoto a través de dispositivos móviles.",
+  },
+  {
+    img: "/servicio2.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "Instalación de Alarmas Anti Robo",
+    textoDescripcion:
+      "Nuestras alarmas antirrobo te ofrecen protección 24/7. Instalamos sistemas personalizados con sensores de alta sensibilidad, sirenas potentes y la posibilidad de monitoreo remoto desde tu celular.",
+  },
+  {
+    img: "/servicio3.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "Instalación de Sensores de Movimiento",
+    textoDescripcion:
+      "Nuestros sensores de movimiento pueden detectar cualquier tipo de intrusion que se genera en un rango especifico, al activarse este puede comunicarse con potentes alarmas sonoras y de luz.",
+  },
+  {
+    img: "/servicio4.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "instalación de Control de Acceso",
+    textoDescripcion:
+      "Ofrecemos una amplia solución a la integración de control de acceso con instalación de portones automáticos, lectores de tarjeta y lectores biométricos, retenedores magnéticos. Ademas de video porteros para identificar personal.",
+  },
+];
 ---
 
 <Layout
   title="Servicios - Instalación de Corrientes Débiles, Seguridad Electrónica y Telecomunicaciones"
   description="Descubre los servicios de instalación de corrientes débiles, seguridad electrónica y telecomunicaciones que ofrece Servicios de Telecomunicaciones Chile SPA. Soluciones completas para tus necesidades tecnológicas."
 >
-  <h1>Servicios</h1>
+  <div class="mt-20 max-w-screen-xl mx-auto p-4">
+    <div>
+      <h1 class="text-4xl md:text-4xl font-bold text-center mt-10">
+        Nuestros Servicios
+      </h1>
+      <hr
+        class="h-1 bg-gray-950 border-none rounded-2xl md:w-60 w-44 mx-auto text-pretty"
+      />
+      <p class="mt-10 text-pretty text-[14pt] text-gray-700">
+        Descubre los servicios de instalación de <strong class="text-red-500"
+          >corrientes débiles, seguridad electrónica y telecomunicaciones</strong
+        > que ofrece Servicios de Telecomunicaciones Chile SPA. Soluciones completas
+        para tus necesidades tecnológicas.
+      </p>
+    </div>
+
+    <div class="mt-24">
+      <h2 class="text-3xl font-bold pb-6">Seguridad Electronica</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {
+          serviciosSeguridadElectronica.map((servicio) => (
+            <div class="flex flex-col bg-white border border-gray-200 rounded-lg shadow md:flex-row">
+              <img
+                class="object-cover w-full rounded-t-lg h-52 md:h-full md:w-60 md:rounded-none md:rounded-s-lg"
+                src={servicio.img}
+                alt={servicio.imgAlt}
+                title={servicio.imgTitle}
+              />
+              <div class="flex flex-col  p-4 leading-normal object-top">
+                <h5 class="mb-2 text-2xl text-pretty font-bold tracking-tight text-gray-900">
+                  {servicio.textoTitulo}
+                </h5>
+                <p class="mb-3 text-[14pt] font-normal text-gray-700 text-pretty">
+                  {servicio.textoDescripcion}
+                </p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
 </Layout>
