@@ -8,7 +8,10 @@ const serviciosSeguridadElectronica = [
     imgTitle: "",
     textoTitulo: "Instalación de CCTV (Cámaras de Seguridad)",
     textoDescripcion:
-      "Ofrecemos instalación profesional de sistemas de cámaras CCTV de alta definición, con visión nocturna y detección de movimiento. Incluyendo instalación de cableado, configuración de DVR y acceso remoto a través de dispositivos móviles.",
+      "Ofrecemos instalación profesional de sistemas de cámaras CCTV de alta definición.",
+    item1: "Cámara IP",
+    item2: "Cámara Analógica",
+    item3: "Cámara Lectora de patente",
   },
   {
     img: "/servicio2.webp",
@@ -16,23 +19,123 @@ const serviciosSeguridadElectronica = [
     imgTitle: "",
     textoTitulo: "Instalación de Alarmas Anti Robo",
     textoDescripcion:
-      "Nuestras alarmas antirrobo te ofrecen protección 24/7. Instalamos sistemas personalizados con sensores de alta sensibilidad, sirenas potentes y la posibilidad de monitoreo remoto desde tu celular.",
+      "Instalamos sistemas personalizados con sensores de alta sensibilidad.",
+    item1: "Sensores de Movimiento",
+    item2: "Sensores Magnéticos",
+    item3: "Alarmas sonoras",
   },
   {
     img: "/servicio3.webp",
     imgAlt: "",
     imgTitle: "",
-    textoTitulo: "Instalación de Sensores de Movimiento",
+    textoTitulo: "Instalación de Control de Acceso",
     textoDescripcion:
-      "Nuestros sensores de movimiento pueden detectar cualquier tipo de intrusion que se genera en un rango especifico, al activarse este puede comunicarse con potentes alarmas sonoras y de luz.",
+      "Ofrecemos una amplia solución a la integración de control de acceso con instalación.",
+    item1: "Video Portero",
+    item2: "Lector de Tarjetas y Biométricos",
+    item3: "Pulsadores de Entrada y salida",
   },
   {
     img: "/servicio4.webp",
     imgAlt: "",
     imgTitle: "",
-    textoTitulo: "instalación de Control de Acceso",
+    textoTitulo: "Instalación de Cercos Eléctricos",
     textoDescripcion:
-      "Ofrecemos una amplia solución a la integración de control de acceso con instalación de portones automáticos, lectores de tarjeta y lectores biométricos, retenedores magnéticos. Ademas de video porteros para identificar personal.",
+      "Servicios de instalación de cercos eléctricos, protección avanzada para tu propiedad con máxima eficiencia",
+    item1: "Adaptación a cualquier tipo de terreno",
+    item2: "Materiales de alta durabilidad y resistencia",
+  },
+];
+
+const serviciosCorrientesDebiles = [
+  {
+    img: "/servicio5.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "Instalación de Chapas Eléctricas",
+    textoDescripcion:
+      "Instalamos chapas eléctricas: Servicio confiable para máxima seguridad y control de acceso",
+    item1: "Asesoría personalizada según tus necesidades",
+    item2: "Mantenimiento preventivo y correctivo",
+  },
+  {
+    img: "/servicio6.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "Instalación de Portón Automático",
+    textoDescripcion:
+      "Automatizamos portones para una entrada segura y sin esfuerzo.",
+    item1: "Brazos Hidráulicos",
+    item2: "Portón corredero",
+    item3: "Sensores y balizas",
+  },
+  {
+    img: "/servicio7.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "Instalación de Alarmas Anti Incendio",
+    textoDescripcion:
+      "Instalamos alarmas anti incendio, protegiendo tu hogar o negocio contra el fuego.",
+    item1: "Sensores de Humo y temperatura",
+    item2: "Palanca Anti incendio",
+    item3: "Balizas estroboscópica",
+  },
+  {
+    img: "/servicio8.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "Instalación de citófonos",
+    textoDescripcion:
+      "Instalamos citófonos, comunicación clara y segura en tu hogar o empresa.",
+    item1: "Para departamentos, Empre u Hogar",
+    item2: "Citófonos para calle",
+    item3: "Central de Citófonos",
+  },
+];
+
+const serviciosTelecomunicaciones = [
+  {
+    img: "/servicio9.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "Instalación de RIT Alámbrica",
+    textoDescripcion:
+      "Instalamos RIT de comunicación alámbrica para TV en edificios.",
+    item1: "Cable coaxial RG11 y RG6",
+    item2: "Conectores de TV coaxial",
+    item3: "Estructurado y cableado",
+  },
+  {
+    img: "/servicio10.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "Instalación de RIT Inalámbrica",
+    textoDescripcion:
+      "Instalamos RIT de comunicación inalámbrica para TV en edificios.",
+    item1: "Cable coaxial RG11 y RG6",
+    item2: "Conectores de TV coaxial",
+    item3: "Estructurado y cableado",
+  },
+  {
+    img: "/servicio11.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "Instalación de RIT Fibra Óptica",
+    textoDescripcion:
+      "Instalamos RIT de fibra óptica para conexiones de alta velocidad a internet",
+    item1: "Estructurado y cableado",
+    item2: "Armado de racks ",
+  },
+  {
+    img: "/servicio12.webp",
+    imgAlt: "",
+    imgTitle: "",
+    textoTitulo: "Instalación de RIT Puntos de Red",
+    textoDescripcion:
+      "Instalamos Puntos de RED para oficinas, empresas, entre otros.",
+    item1: "Punto de red en oficina",
+    item2: "Punto de red en empresas",
+    item3: "Armado y estructurado",
   },
 ];
 ---
@@ -76,6 +179,91 @@ const serviciosSeguridadElectronica = [
                 <p class="mb-3 text-[14pt] font-normal text-gray-700 text-pretty">
                   {servicio.textoDescripcion}
                 </p>
+                {servicio.item1 && (
+                  <ul class="list-disc pl-6 space-y-4 text-[14pt]">
+                    <li class="text-gray-700">{servicio.item1}</li>
+                    {servicio.item2 && (
+                      <li class="text-gray-700">{servicio.item2}</li>
+                    )}{" "}
+                    {servicio.item3 && (
+                      <li class="text-gray-700">{servicio.item3}</li>
+                    )}
+                  </ul>
+                )}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="mt-24">
+      <h2 class="text-3xl font-bold pb-6">Corrientes Débiles</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {
+          serviciosCorrientesDebiles.map((servicio) => (
+            <div class="flex flex-col bg-white border border-gray-200 rounded-lg shadow md:flex-row">
+              <img
+                class="object-cover w-full rounded-t-lg h-52 md:h-full md:w-60 md:rounded-none md:rounded-s-lg"
+                src={servicio.img}
+                alt={servicio.imgAlt}
+                title={servicio.imgTitle}
+              />
+              <div class="flex flex-col  p-4 leading-normal object-top">
+                <h5 class="mb-2 text-2xl text-pretty font-bold tracking-tight text-gray-900">
+                  {servicio.textoTitulo}
+                </h5>
+                <p class="mb-3 text-[14pt] font-normal text-gray-700 text-pretty">
+                  {servicio.textoDescripcion}
+                </p>
+                {servicio.item1 && (
+                  <ul class="list-disc pl-6 space-y-4 text-[14pt]">
+                    <li class="text-gray-700">{servicio.item1}</li>
+                    {servicio.item2 && (
+                      <li class="text-gray-700">{servicio.item2}</li>
+                    )}{" "}
+                    {servicio.item3 && (
+                      <li class="text-gray-700">{servicio.item3}</li>
+                    )}
+                  </ul>
+                )}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="my-24">
+      <h2 class="text-3xl font-bold pb-6">Telecomunicaciones</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {
+          serviciosTelecomunicaciones.map((servicio) => (
+            <div class="flex flex-col bg-white border border-gray-200 rounded-lg shadow md:flex-row">
+              <img
+                class="object-cover w-full rounded-t-lg h-52 md:h-full md:w-60 md:rounded-none md:rounded-s-lg"
+                src={servicio.img}
+                alt={servicio.imgAlt}
+                title={servicio.imgTitle}
+              />
+              <div class="flex flex-col  p-4 leading-normal object-top">
+                <h5 class="mb-2 text-2xl text-pretty font-bold tracking-tight text-gray-900">
+                  {servicio.textoTitulo}
+                </h5>
+                <p class="mb-3 text-[14pt] font-normal text-gray-700 text-pretty">
+                  {servicio.textoDescripcion}
+                </p>
+                {servicio.item1 && (
+                  <ul class="list-disc pl-6 space-y-4 text-[14pt]">
+                    <li class="text-gray-700">{servicio.item1}</li>
+                    {servicio.item2 && (
+                      <li class="text-gray-700">{servicio.item2}</li>
+                    )}{" "}
+                    {servicio.item3 && (
+                      <li class="text-gray-700">{servicio.item3}</li>
+                    )}
+                  </ul>
+                )}
               </div>
             </div>
           ))
