@@ -28,13 +28,17 @@ import Whatsapp from "./Iconos/Whatsapp.astro";
 <script>
   window.addEventListener("scroll", function () {
     var whatsappButton = document.getElementById("whatsappButton");
-    var scrollPosition = window.scrollY + window.innerHeight;
-    var documentHeight = document.body.offsetHeight;
 
-    if (scrollPosition >= documentHeight) {
-      whatsappButton.classList.add("opacity-0");
-    } else {
-      whatsappButton.classList.remove("opacity-0");
+    // Verifica si whatsappButton no es nulo
+    if (whatsappButton) {
+      var scrollPosition = window.scrollY + window.innerHeight;
+      var documentHeight = document.body.offsetHeight;
+
+      if (scrollPosition >= documentHeight) {
+        whatsappButton.classList.add("opacity-0");
+      } else {
+        whatsappButton.classList.remove("opacity-0");
+      }
     }
   });
 </script>
