@@ -2,6 +2,7 @@
 import "@fontsource/roboto";
 import BarraDeNavegacion from "../components/BarraDeNavegacion.astro";
 import PieDePagina from "../components/PieDePagina.astro";
+import BotonWhatsap from "../components/BotonWhatsap.astro";
 
 interface Props {
   title: string;
@@ -30,6 +31,7 @@ const { title, description } = Astro.props;
 
     <slot />
 
+    <BotonWhatsap />
     <PieDePagina />
     <script
       is:inline
